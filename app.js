@@ -1,6 +1,6 @@
 
 
-const API_BASE = "https://your-render-backend-url.onrender.com";
+const API_BASE = "https://scholarly-registration-backend.onrender.com";
 
 const LS_USER_KEY = "fall_reg_user";
 
@@ -688,4 +688,5 @@ document.addEventListener("DOMContentLoaded", async () => {
     await initAdmin();
   }
 });
+
 
