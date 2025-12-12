@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>My Schedule</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css"/>
+  <link rel="icon" href="fall-reg-logo/fall-reg-logo.jpg" type="image/jpeg">
+</head>
+<body data-page="schedule">
+  <header class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="index.html">
+        <img src="fall-reg-logo/fall-reg-logo.jpg" alt="Fall Registration logo" />
+        <span>Scholarly University</span>
+      </a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="browse.html">Browse</a>
+        <a class="active" href="schedule.html">My Schedule <span id="cartBadge" class="badge">0</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h1>My Schedule</h1>
+      <p class="meta">Review your selected sections and confirm your registration.</p>
+    </div>
+  </section>
+
+  <main class="container">
+    <div class="card">
+      <div style="display:flex;justify-content:space-between;align-items:center">
+        <h3 style="margin:0">Selected Sections</h3>
+        <div>
+          <button id="confirmSchedule" class="btn" type="button">Confirm Registration</button>
+          <button id="clearCart" class="btn secondary" type="button">Clear</button>
+        </div>
+      </div>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Course</th>
+            <th>CRN</th>
+            <th>When</th>
+            <th>Instructor</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody id="scheduleBody"></tbody>
+      </table>
+      <div id="conflicts" class="alert" aria-live="polite"></div>
+    </div>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
+

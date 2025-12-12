@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Admin — Enrollments</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css"/>
+  <link rel="icon" href="fall-reg-logo/fall-reg-logo.jpg" type="image/jpeg">
+</head>
+<body data-page="admin">
+  <header class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="index.html">
+        <img src="fall-reg-logo/fall-reg-logo.jpg" alt="Fall Registration logo" />
+        <span>Scholarly University</span>
+      </a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="browse.html">Browse</a>
+        <a href="schedule.html">My Schedule <span id="cartBadge" class="badge">0</span></a>
+        
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h1>Admin — Enrollments</h1>
+      <p class="meta">View all student enrollments across terms.</p>
+    </div>
+  </section>
+
+  <main class="container">
+    <div class="card">
+      <h3>All Enrollments</h3>
+      <p id="adminMsg" class="alert"></p>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Student</th>
+            <th>Course</th>
+            <th>Term</th>
+            <th>CRN</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody id="adminBody"></tbody>
+      </table>
+    </div>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

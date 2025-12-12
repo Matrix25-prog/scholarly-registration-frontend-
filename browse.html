@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Browse Courses</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css"/>
+  <link rel="icon" href="fall-reg-logo/fall-reg-logo.jpg" type="image/jpeg">
+</head>
+<body data-page="browse">
+  <header class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="index.html">
+        <img src="fall-reg-logo/fall-reg-logo.jpg" alt="Fall Registration logo" />
+        <span>Scholarly University</span>
+      </a>
+      <nav class="nav-links" aria-label="Primary">
+        <a class="active" href="browse.html">Browse</a>
+        <a href="schedule.html">My Schedule <span id="cartBadge" class="badge">0</span></a>
+        
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h1>Browse Courses</h1>
+      <p class="meta">Search and filter. Add sections to your schedule.</p>
+    </div>
+  </section>
+
+  <main class="container">
+    <div class="toolbar" role="region" aria-label="Filters">
+      <input id="q" class="input" placeholder="Search title or code…" aria-label="Search"/>
+      <select id="subject" aria-label="Subject"><option value="">All subjects</option></select>
+      <select id="credits" aria-label="Credits">
+        <option value="">Any credits</option>
+        <option value="2">2 credits</option>
+        <option value="3">3 credits</option>
+        <option value="4">4 credits</option>
+      </select>
+      
+      <select id="term" aria-label="Term">
+        <option value="">Any term</option>
+      </select>
+      <select id="day" aria-label="Day">
+        <option value="">Any day</option>
+        <option value="1">Mon</option>
+        <option value="2">Tue</option>
+        <option value="3">Wed</option>
+        <option value="4">Thu</option>
+        <option value="5">Fri</option>
+      </select>
+      <button id="clearFilters" class="btn secondary" type="button">Clear</button>
+    </div>
+
+    <div id="grid" class="grid" aria-live="polite"></div>
+  </main>
+
+  
+  <script src="app.js"></script>
+</body>
+</html>
+
+
+
+
